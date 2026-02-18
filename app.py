@@ -37,3 +37,8 @@ if uploaded_file is not None:
 
     st.subheader("Raw Output:")
     st.write(raw_text)
+    if raw_text.strip() != "":
+        corrected_text = str(TextBlob(raw_text).correct())
+
+        st.subheader("Corrected Output:")
+        st.write(corrected_text)
