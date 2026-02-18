@@ -37,10 +37,3 @@ if uploaded_file is not None:
 
     st.subheader("Raw Output:")
     st.write(raw_text)
-
-    # Spell Correction
-    blob = TextBlob(raw_text)
-    corrected_text = str(blob.correct())
-
-    st.subheader("Corrected Text:")
-    st.success(corrected_text)
