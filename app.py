@@ -35,7 +35,7 @@ if uploaded_file is not None:
     for (_, text, prob) in results:
         raw_text += text + " "
 
-    st.subheader("Raw OCR Output:")
+    st.subheader("Raw Output:")
     st.write(raw_text)
 
     # Spell Correction
