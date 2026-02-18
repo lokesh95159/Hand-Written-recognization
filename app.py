@@ -14,7 +14,7 @@ def load_ocr():
 
 reader = load_ocr()
 
-st.title("🧠 Handwritten OCR with Auto Spell Correction")
+st.title("Handwritten Digit Recognition")
 
 uploaded_file = st.file_uploader(
     "Upload Image",
